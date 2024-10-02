@@ -40,13 +40,13 @@ Unless otherwise discussed with your advisor, you are meeting with your advisor 
 
 ## Working Period
 
-The official working period for the first term project is 06.01.-15.03.25. If you are sick within the official work period, you can get a deadline extension based on a doctor’s note (“Attest”). For that you have to submit the Attest within the first three days of your sickness. We are not allowed to accept later than three days and Attest in retrospect.  
+The official working period for the first term project is 06.01.-15.03.25. If you are sick within the official work period, you can get a deadline extension based on a doctor’s note (“Attest”). For that, you have to submit the Attest within the first three days of your sickness. We are not allowed to accept later than three days or any Attests in retrospect.  
 
 ## Requirements
 
 ### Project Plan Presentation
 
-On Jan. 8, you have to present your project and your planning. Your presentation must be < 20min. After the presentation there will be some time for discussion.
+On Jan. 8, you have to present your project and your planning. Your presentation must be < 20 min. After the presentation there will be some time for discussion.
 
 ### Project Plan Submission
 
@@ -62,7 +62,7 @@ The project plan must include:
 	* Minimum of 1500 characters
 	* Be as detailed as you can at this point
 	* Add as many images and videos or references as you like
-* Explain which of the following catagories are you planning to be part of your project and how so:
+* Explain which of the following categories are you planning to be part of your project and how so:
     * Creative / artistic development
     * Narrative development
     * Audio-visual design
@@ -71,10 +71,10 @@ The project plan must include:
     * Algorithms
     * Research / Experimentation
 * System diagram
-    * With which tech components are you working and how are they connected?
+    * With which tech components are you working, and how are they connected?
 * Minimal viable product
     * What is the smallest achievement you want to reach?
-* Best case scenario
+* Best-case scenario
     * What would you like to achieve if everything goes according to plan?
 * Vision
     * What is your vision for the project beyond what you can achieve within the first term project requirements and time?
@@ -86,7 +86,7 @@ The project plan must include:
 * Work plan with timeline until the deadline
 
 	
-Upload your project plan to this folder in a folder of your lastname with the filename projectplan_lastname.md. You can also submit a document with a link to your personal repo.
+Upload your project plan to this folder in a folder of your last name with the filename projectplan_lastname.md. You can also submit a document with a link to your personal repo.
 
 For planning your project, take the evaluation criteria into consideration, e.g. we also evaluate your learning curve and experimental results.
 
@@ -98,9 +98,9 @@ The final project submission must include:
 
 1. Result presentation
     * A link to a polished website with your results
-    * The webpage can be simple, e.g., it can be a github page
-    * Your results must be fully understandable based on this page (e.g. to someone who know nothing about your project)
-    * You are free to design this page, it can also include a trailer but you must cover the following points:
+    * The webpage can be simple, e.g., it can be a GitHub page
+    * Your results must be fully understandable based on this page (e.g. to someone who knows nothing about your project)
+    * You are free to design this page, it can also include a trailer, but you must cover the following points:
         * Title
         * Description of the content and its technical implementation
         * Context, related work
@@ -110,7 +110,7 @@ The final project submission must include:
 2. Project documentation
     * You can refer to any content of part 1, you do not have to repeat yourself
     * Your work diary with temporary results and failure cases
-    * Explain which of the following catagories are part of your results and how so:
+    * Explain which of the following categories are part of your results and how so:
         * Creative / artistic development
         * Narrative development
         * Audio-visual design
@@ -122,13 +122,13 @@ The final project submission must include:
         * Why did you make the choice you made?
         * What worked well, what didn't?
         * What would you do differently next time?
-    * Reflection on your Minimal viable product and Best case scenario plans
+    * Reflection on your Minimal viable product and Best-case scenario plans
         * What did you archive, what not and why?
     * Challenge of your comfort zone
-        * What was new for you and what did you learn?
+        * What was new for you, and what did you learn?
         * What was the most difficult for you?
     * Reflection on your original work plan with timeline 
-        * To you follow your plan and if not why not?
+        * To you follow your plan and if not, why not?
 3. Source files
     * All source and project files, needed to re-create the project
     * Files can either be uploaded to this folder or you can provide a link to a different repo or online repository.
@@ -136,9 +136,10 @@ The final project submission must include:
 
 ### Final Project Presentation
 
-In April everybody must present their results and project documentation. The presentation must be <= 20min. There mustn't be any major changes to what was submitted in March. After each presentation there will be time for questions and a discussion.
+In April, everybody must present their results and project documentation. The presentation must be <= 20 min. There mustn't be any major changes to what was submitted in March. After each presentation, there will be time for questions and a discussion.
 
-After the presentation you must also submit the presentation slides and all used materials.   
+
+After the presentation, you must also submit the presentation slides and all used materials.   
 
 ## Grading
 
@@ -148,9 +149,10 @@ The grade is based on
 * the submitted project results and documentation
 * the presentation
 
-Please keep in mind that you should document your learning path and the execution of a plan continuously through out the project. The documentation needs to cover the whole term, starting in November.
+Please keep in mind that you should document your learning path and the execution of a plan continuously throughout the project. The documentation needs to cover the whole term, starting in November.
   
-If you complete all other requirement but the final project submission, you can submit the project at a later time but 15% of the final grade will be reduced. If you do not want a grade reduction for lateness or if you want to change the topic of your project one more time, you will need to re-do all steps for the 1st term project in the following year.
+If you complete all other requirements but the final project submission, you can submit the project at a later time, but 15% of the final grade will be reduced. If you do not want a grade reduction for lateness or if you want to change the topic of your project one more time, you will need to re-do all steps for the 1st term project in the following year.
+
 
 ## Evaluation Criteria
 
@@ -181,7 +183,7 @@ The project reflection is graded mainly but not exclusively based on (also, only
 
 ### Presentation
 
-Website and the oral presentation are graded mainly but not exclusively based on (also, only if applicable) the following criteria:
+The website and the oral presentation are graded mainly but not exclusively based on (also, only if applicable) the following criteria:
 
 * Overall appeal
 * Completeness
