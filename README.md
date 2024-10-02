@@ -31,8 +31,8 @@ Unless otherwise discussed with your advisor, you are meeting with your advisor 
 
 ## Deadlines and Presentation Times
 
-* Bi-weekly talks with your mentor
-* Project week: 06.-10.01.25
+* Bi-weekly talks with your mentor, Tuesdays between 14-17:00
+* Project week: 06.-10.01.25, room 6119
 * Project presentation: 08.01.25, 13-18:00, room 6119
 * Project plan submission: 15.01.25, 23:59, Berlin time
 * Project submission: 15.03.24, 23:59, Berlin time
