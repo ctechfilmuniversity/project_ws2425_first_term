@@ -11,6 +11,7 @@ Alex Walmsley | a.walmsley@filmuniversitaet.de
     * [Advisors](#advisors)
     * [Deadlines and Presentation Times](#deadlines-and-presentation-times)
     * [Working Period](#working-period)
+        * [Sickness](#sickness)
     * [Requirements](#requirements)
         * [Project Plan Presentation](#project-plan-presentation)
         * [Project Plan Submission](#project-plan-submission)
@@ -60,43 +61,10 @@ Deadline: 15.01.25, 23:59
 
 The project plan must include:
 
-* Motivation
-    * Personal motivation
-    * What is the context of your project?
-    * Related work?
-* Project description
-    * Minimum of 1500 characters
-    * Be as detailed as you can at this point
-    * Add as many images and videos or references as you like
-* Explain which of the following categories are you planning to be part of your project and how so:
-    * Creative / artistic development
-    * Narrative development
-    * Audio-visual design
-    * Software development
-    * Hardware and pipeline development
-    * Algorithms
-    * Research / Experimentation
-* System diagram
-    * With which tech components are you working, and how are they connected?
-* Minimal viable product
-    * What is the smallest achievement you want to reach?
-* Best-case scenario
-    * What would you like to achieve if everything goes according to plan?
-* Vision
-    * What is your vision for the project beyond what you can achieve within the first term project requirements and time?
-* Unique selling point
-    * What makes your project special to you?
-* Challenge of your comfort zone
-    * What is new for you and what do you want to learn?
-    * What do you expect to be the most difficult for you?
-* Work plan with timeline until the deadline
-
----
-
-* Motivation | Why  
+* Motivation (*Why?*)  
     * Personal motivation  
     * Also, contextual information such as related work  
-* Project Details | What & how  
+* Project Details (*What & how?*)  
     * Description   
         * Minimum of 1500 characters  
         * Be as detailed as you can at this point  
@@ -110,16 +78,16 @@ The project plan must include:
             * Hardware and pipeline development
             * Algorithms
             * Research / Experimentation
-        * System diagram
-            * With which tech components are you working, and how are they connected?
+    * System diagram
+        * With which tech components are you working, and how are they connected?
     * Unique selling point
-        * What makes your project special to you?
+        * What makes the project special to you?
 * Expected Results 
-    * Baseline solutio
+    * Baseline solution
         * What is the smallest achievement you want to reach?
     * Best possible solution
         * What would you like to achieve if everything goes according to plan?
-* Vision / Future Work
+* Vision and Future Work
     * What is your vision for the project beyond what you can achieve within the first term project requirements and time?
 * Challenge of your comfort zone
     * What is new for you and what do you want to learn?
