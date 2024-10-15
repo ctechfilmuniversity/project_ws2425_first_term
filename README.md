@@ -82,6 +82,7 @@ The project plan must include:
         * With which tech components are you working, and how are they connected?
     * Unique selling point
         * What makes the project special to you?
+        * E.g., are you addressing gaps in the literature or contemporary design challenges or current debates in the arts or society etc.?
 * Expected Results 
     * Baseline solution
         * What is the smallest achievement you want to reach?
