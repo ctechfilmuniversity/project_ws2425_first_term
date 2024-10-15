@@ -28,6 +28,8 @@ Alex Walmsley | a.walmsley@filmuniversitaet.de
 
 Unless otherwise discussed with your advisor, you are meeting with your advisor every two weeks to talk about your project in detail. It is your responsibility to get in touch and to make appointments.
 
+>> You can use the time slot scheduled for CTech Lab I to work on your project and meet your advisor.
+
 
 ## Deadlines and Presentation Times
 
@@ -40,7 +42,11 @@ Unless otherwise discussed with your advisor, you are meeting with your advisor 
 
 ## Working Period
 
-The official working period for the first term project is 06.01.-15.03.25. If you are sick within the official work period, you can get a deadline extension based on a doctor’s note (“Attest”). For that, you have to submit the Attest within the first three days of your sickness. We are not allowed to accept later than three days or any Attests in retrospect.  
+The official working period for the first term project is 06.01.-15.03.25. 
+
+### Sickness 
+
+If you are sick within the official work period, you can get a deadline extension based on a doctor’s note (“Attest”). For that, you have to submit the Attest within the first three days of your sickness. We are not allowed to accept later than three days or any Attests in retrospect.  
 
 ## Requirements
 
@@ -84,6 +90,45 @@ The project plan must include:
     * What is new for you and what do you want to learn?
     * What do you expect to be the most difficult for you?
 * Work plan with timeline until the deadline
+
+---
+
+* Motivation | Why  
+    * Personal motivation  
+    * Also, contextual information such as related work  
+* Project Details | What & how  
+    * Description   
+        * Minimum of 1500 characters  
+        * Be as detailed as you can at this point  
+        * Add as many images and videos or references as you like  
+    * Categorization
+        * Explain which of the following categories are you planning to be part of your project and how so:
+            * Creative / artistic development
+            * Narrative development
+            * Audio-visual design
+            * Software development
+            * Hardware and pipeline development
+            * Algorithms
+            * Research / Experimentation
+        * System diagram
+            * With which tech components are you working, and how are they connected?
+    * Unique selling point
+        * What makes your project special to you?
+* Expected Results 
+    * Baseline solutio
+        * What is the smallest achievement you want to reach?
+    * Best possible solution
+        * What would you like to achieve if everything goes according to plan?
+* Vision / Future Work
+    * What is your vision for the project beyond what you can achieve within the first term project requirements and time?
+* Challenge of your comfort zone
+    * What is new for you and what do you want to learn?
+    * What do you expect to be the most difficult for you?
+* Work plan
+    * Timeline until the deadline
+    * Work packages
+    * Milestones
+
 
 	
 Upload your project plan to this folder in a folder of your last name with the filename projectplan_lastname.md. You can also submit a document with a link to your personal repo.
