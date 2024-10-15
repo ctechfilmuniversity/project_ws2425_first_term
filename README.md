@@ -59,9 +59,9 @@ The project plan must include:
     * What is the context of your project?
     * Related work?
 * Project description
-	* Minimum of 1500 characters
-	* Be as detailed as you can at this point
-	* Add as many images and videos or references as you like
+    * Minimum of 1500 characters
+    * Be as detailed as you can at this point
+    * Add as many images and videos or references as you like
 * Explain which of the following categories are you planning to be part of your project and how so:
     * Creative / artistic development
     * Narrative development
@@ -79,7 +79,7 @@ The project plan must include:
 * Vision
     * What is your vision for the project beyond what you can achieve within the first term project requirements and time?
 * Unique selling point
-    * What makes your project special?
+    * What makes your project special to you?
 * Challenge of your comfort zone
     * What is new for you and what do you want to learn?
     * What do you expect to be the most difficult for you?
