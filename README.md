@@ -1,8 +1,8 @@
 # 1st Term Project - Winter Term 24/25
 
-Prof. Dr.-Ing. Angela Brennecke | a.brennecke@filmuniversitaet.de  
-Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de    
-Alex Walmsley | a.walmsley@filmuniversitaet.de  
+Prof. Dr.-Ing. Angela Brennecke - a.brennecke@filmuniversitaet.de  
+Prof. Dr. Lena Gieseke - l.gieseke@filmuniversitaet.de    
+Alex Walmsley - a.walmsley@filmuniversitaet.de  
 
 ---
 
@@ -29,7 +29,7 @@ Alex Walmsley | a.walmsley@filmuniversitaet.de
 
 Unless otherwise discussed with your advisor, you are meeting with your advisor every two weeks to talk about your project in detail. It is your responsibility to get in touch and to make appointments.
 
->> You can use the time slot scheduled for CTech Lab I to work on your project and meet your advisor.
+***You can use the time slot scheduled for CTech Lab I to work on your project and meet your advisor.***
 
 
 ## Deadlines and Presentation Times
@@ -207,5 +207,4 @@ The website and the oral presentation are graded mainly but not exclusively base
 
 ## Presentation Schedule (*tba*)
 
-| Session        | Presenter | Note      |
-| -------------- | --------- | --------- |
+
