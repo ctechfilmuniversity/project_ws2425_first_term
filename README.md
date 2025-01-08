@@ -78,7 +78,7 @@ The project plan must include:
             * Hardware and pipeline development
             * Algorithms
             * Research / Experimentation
-    * System diagram
+    * System diagram / Technical Setup / Tech Stack
         * With which tech components are you working, and how are they connected?
     * Unique selling point
         * What makes the project special to you?
