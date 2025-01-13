@@ -10,7 +10,7 @@ In order to figure out the biases laden in these models, I will be mainly explor
 
 ## Generating prompts
 
-This study draws methodological inspiration from the book *Blindspot: Hidden Biases of Good People* by Anthony Greenwald and Mahzarin Banaji (2013). 
+This study draws methodological inspiration from the book *Blindspot: Hidden Biases of Good People* (Greenwald & Banaji, 2013). 
 The authors explore how biases happen automatically, without much conscious thought. AI models, similarly, operate based on patterns in data that 
 they have learned and, as a result, reproduce biases that exist within the data.
  Just as human biases stem from societal norms, the patterns in AI models often reflect similar biases.
@@ -58,7 +58,7 @@ this by measuring the strength of automatic associations among different categor
 
 ## Statistical methods
 
-Some of the methods on how to go about this research was influenced by the research paper *Smiling Women Pitching Down: Auditing Representational and Presentational Gender Biases* from the University of Wisconsin-Madison. In this study, the researchers decided to create 150 prompts, each representing a different occupation, and then generate 100 images per prompt. Altogether they generated 150 000 DALL-E 2 images which they then analysed for gender biases. They then used Amazon Rekognition to detect faces, identify gender and measure features like smiling and head pitch and then used tests such as Proportion Z-tests to see if there was a significant difference between gender distribution between DALL-E and Google Images and DALL-E and census data. They also used Generalized Linear Mixed Models to assess smiling by gender and occupation and Linear Mixed Models to evaluate the face pitch angle from the images. 
+Some of the methods on how to go about this research was influenced by the research paper *Smiling Women Pitching Down: Auditing Representational and Presentational Gender Biases* (Sun, Wei, Sun, Suh, Shen, & Yang, 2024) from the University of Wisconsin-Madison. In this study, the researchers decided to create 150 prompts, each representing a different occupation, and then generate 100 images per prompt. Altogether they generated 150 000 DALL-E 2 images which they then analysed for gender biases. They then used Amazon Rekognition to detect faces, identify gender and measure features like smiling and head pitch and then used tests such as Proportion Z-tests to see if there was a significant difference between gender distribution between DALL-E and Google Images and DALL-E and census data. They also used Generalized Linear Mixed Models to assess smiling by gender and occupation and Linear Mixed Models to evaluate the face pitch angle from the images. 
 
 This project will take a similar approach on a smaller scale, using 20 prompts with 100 images each. 
 The images will then be tagged using models such as CLIP or RAM to create datasets which I will then analyse using 
@@ -115,3 +115,10 @@ Lastly, I think that implementing the backend using express.js and saving my dat
 # Work Plan
 
 <img src="./images/project_timeline_final.jpg" alt="Work Plan">
+
+# References
+
+- Greenwald, A. G., & Banaji, M. R. (2013). Blindspot: Hidden biases of good people. Delacorte Press.
+
+- Sun, L., Wei, M., Sun, Y., Suh, Y. J., Shen, L., & Yang, S. (2024). Smiling women pitching down: Auditing representational and presentational gender biases in image-generative AI. Journal of Computer-Mediated Communication, 29(1), Article zmad045. https://doi.org/10.1093/jcmc/zmad045
+
