@@ -21,7 +21,7 @@ Inspired by games such as:
 
 ![Regime Shift 1](./img/lego.png)_Screenshot of LEGO® Builder's Journey_
 
-Current Relevance:
+## Current Relevance:
 
 - Growing awareness of ecological relationships
 - Need for interactive educational tools for environmental topics
