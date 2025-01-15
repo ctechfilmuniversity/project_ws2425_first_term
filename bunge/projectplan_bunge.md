@@ -51,7 +51,7 @@ The planned outcome of this project seeks to address significant gaps in the res
 
 ### c.	System Diagram: 
 
-![System Diagram](https://github.com/sophiebunge/Uni-Stuff/blob/main/Orientationproject/img/system_diagram.png)
+![System Diagram](./img/system_diagram.png)
 
 ### d.	Unique Selling Point: 
 
@@ -82,4 +82,4 @@ Almost every part of this project feels bitter-sweet. I began with a strong focu
 
 ## 6.	Work Plan
 
-![Timeline](https://github.com/sophiebunge/Uni-Stuff/blob/main/Orientationproject/img/Timeline.jpg)
+![Timeline](./img/Timeline.jpg)
