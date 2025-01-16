@@ -17,8 +17,6 @@ The experience will use a vintage color palette, and it's visuals will take insp
 
 The storytelling style of "Eucalyptus Scroll" merges captivating illustrations, evocative images, and data driven visualizations. Pastel and earthy tones create a calming visual atmosphere, while the artistic approach offers an interpretative exploration of the eucalyptus tree’s transformation in the israeli view. 
 
-##### First Row
-
   <img src="1.png" width="30%" alt="Mood board image 1">
   <img src="2.png" width="30%" alt="Mood board image 2">
   <img src="3.png" width="30%" alt="Mood board image 3">
@@ -27,7 +25,7 @@ The storytelling style of "Eucalyptus Scroll" merges captivating illustrations, 
   <img src="5.png" width="30%" alt="Mood board image 5">
   <img src="6.png" width="30%" alt="Mood board image 6">
 
-  <img src="7.png" width="50%" alt="Mood board image 7">
+  <img src="7.png" width="30%" alt="Mood board image 7">
 
 
 ### Story Structure
