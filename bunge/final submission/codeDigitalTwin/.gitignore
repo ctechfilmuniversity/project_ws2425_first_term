@@ -1,0 +1,28 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+
+# System files
+.DS_Store
+
+# Pytest and coverage files
+.coverage
+*.coverage
+nosetests.xml
+test-results/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Other unwanted files
+*.log
+*.db
+.vercel
