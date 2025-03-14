@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://russellgoldenberg.github.io/scrollama/sticky-overlay/ -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>No Water No Life - Scrollable video example</title>
+    <meta name="description" content="No Water No Life - Scrollable video example with Scrollama Sticky Overlay" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+     body {
+  background-color: #000;
+  font-family: Cambria, Georgia, serif;
+  max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+#intro {
+  max-width: 40rem;
+  margin: 1rem auto 320px auto; /* Combined margin declaration */
+  text-align: center;
+  height: 100vh;
+}
+
+.intro__hed {
+  font-size: 3rem;
+  margin: 2rem auto 0.5rem auto;
+}
+
+.intro__dek {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+#outro {
+  max-width: 40rem;
+  margin: 1rem auto 320px auto; /* Combined margin declaration */
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.outro__hed {
+  font-size: 2rem;
+  margin: 2rem auto 0.5rem auto;
+}
+
+.outro__dek {
+  font-size: 1rem;
+  margin: 2rem auto 0.5rem auto;
+}
+
+figcaption {
+  text-align: left;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 1; /* Note: Consider correcting the font-weight value */
+  color: rgba(255, 255, 255, 0.6);
+}
+
+figure {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  background-color: #8a8a8a;
+  z-index: 0;
+}
+
+.step-0 p {
+  text-align: left;
+    padding: 1rem;
+    top: 50%;
+    margin-top: 130px;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 350px;
+    z-index: 10;
+    z-index: 1;
+    position: relative;
+}
+
+ .p-right {
+margin-left: 30%
+}
+
+
+.scrolly {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 0;
+}
+
+article {
+  position: relative;
+  padding: 0;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.step {
+  margin: 0 auto 2rem auto;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); /* Make background semi-transparent to see the background image */
+}
+
+.step-0 {
+  margin: 0 auto 2rem auto;
+  color: #fff;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5); /* Make background semi-transparent to see the background image */
+}
+
+.parallex-sec {
+  padding: 40px 20px;
+  overflow-x: hidden;
+  position: relative;
+  height: 200vh;
+  background-image: url('/img/view-bg.png'); /* Assuming full path is provided */
+  background-size: cover;
+
+}
+
+
+.view {
+  /* position: absolute;
+  background-position: bottom;
+  height: 50%; 
+  right: -200px;
+  background-image: url('img/view-1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0; */ 
+  height: 50%;
+  position: absolute;
+  left: -100px;
+  bottom: 0;
+}
+
+
+.tree {
+  position: absolute;
+  left: -100px;
+  bottom: 0;
+  /* background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom; */
+  z-index: 0;
+}
+
+
+.tree-1 {
+  /* background-image: url('img/view-2.png'); */
+  height: 50%; 
+  opacity: 1;
+}
+
+
+
+.tree-2 {
+  /* background-image: url('img/view-3.png'); */
+  opacity: 0.7;
+  height: 50%; 
+}
+
+.tree-3 {
+  /* background-image: url('img/view-4.png'); */
+  opacity: 0.5;
+  height: 50%; 
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .tree-1 {
+    height: 70%;
+    opacity: 1;
+    bottom: -80px;
+    left: -200px;
+  }
+
+
+}
+
+.step:last-child {
+  margin-bottom: 50rem;
+}
+
+.step.is-active p {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.step p {
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#background-video {
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+  
+     </style>
+  </head>
+
+  <body>
+    <main>
+      <!-- <section id="intro">
+        <video
+          id="background-video"
+          autoplay
+          loop
+          muted
+          poster="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/ship_graveyard.png?v=1659377819289"
+        >
+          <source
+            src="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/aral_sea_07.mp4?v=1659381917939"
+            type="video/mp4"
+          />
+        </video>
+
+        <h1 class="intro__hed">The Tree of Jews:</h1>
+        <p class="intro__dek">
+          The Battle Over Israel's Eucalyptus Trees
+        </p>
+        <br>
+        <p>Though eucalyptus trees were imported from Australia to drain swamps, today there's debate over whether they're true citizens – or just invaders
+        </p>
+        
+      </section> -->      
+      <section class="parallex-sec step-0">
+        <h1>The Tree of Jews:</h1>
+        <p>
+          The Battle Over Israel's Eucalyptus Trees
+        </p>
+        <br>
+        <p>Though eucalyptus trees were imported from Australia to drain swamps, today there's debate over whether they're true citizens – or just invaders
+        </p>
+        <!-- div class="view"></div>
+          <div class="tree tree-1"></div>
+        <div class="tree tree-2"></div>
+        <div class="tree tree-3"></div>   -->
+        <img src="/img/view-1.png" class="view"></img>
+        <img src="/img/view-2.png" class="tree tree-1"></img>
+        <img src="/img/view-4.png" class="tree tree-2"></img>
+        <img src="/img/view-3.png" class="tree tree-3"></img>
+        <div> 
+          <p class="p-left p-1">
+            “a young nation has shallow roots and the slightest disturbance can throw out the equilibrium, patriotically speaking. 
+          </p>
+        </div>
+        <div> 
+          <p class="p-right p-2">
+              Nationalism is nothing less than clutching at straws.” 
+          </p>
+        </div>
+        <div> 
+          <p class="p-left p-3">
+              This warning in the lovely 1998 novel “Eucalyptus״ is written by Australian author Murray Bail
+          </p>
+        </div>
+    </section>
+      <section class="scrolly">
+        <figure style="height: 336.5px; top: 168.25px">
+          <div class="frame">
+            <p>0</p>
+            <!--   actual graphic/chart   -->
+            <img
+              src="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/mina_running.jpeg?v=1659890139451" id="imgObj"
+              width="100%"
+            />
+            <figcaption id="captionObj">
+              “a young nation has shallow roots and the slightest disturbance can throw out the equilibrium, patriotically speaking. 
+            </figcaption>
+          </div>
+        </figure>
+        <article>
+          <div class="step"
+               data-step="1"
+            style="height: 504px"
+            data-scrollama-index="0"
+                data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/mina_running.jpeg?v=1659890139451"
+            data-text="Mina Guli is running 200 marathons to draw attention to the world water crisis. "
+            data-attribute="src"
+            data-target="imgObj"
+               ><p class="p-right">
+                Nationalism is nothing less than clutching at straws.” 
+              </p></div>
+          <div class="step"
+                    data-step="2"
+            style="height: 504px"
+            data-scrollama-index="1"
+                                              data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/ship_graveyard.png?v=1659377819289"
+            data-text="Ship Graveyard, Muynak, Uzbekistan,
+Uzbekistan"
+            data-attribute="src"
+            data-target="imgObj"
+               ><p class="p-left">
+                This warning in the lovely 1998 novel “Eucalyptus״ is written by Australian author Murray Bail
+              </p></div>
+      <div class="step"
+                data-step="3"
+            style="height: 350px"
+            data-scrollama-index="4"
+                data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/ship_graveyard.png?v=1659377819289"
+            data-text="Ship Graveyard, Muynak, Uzbekistan,
+Uzbekistan"
+            data-attribute="src"
+            data-target="imgObj"
+           ><p>
+         Formerly the world's fourth largest lake, the Aral Sea dried up when the region's rivers were diverted for cotton farming.  Fishing boats and the people who relied on them were left stranded as the water dried up.</p></div>
+
+     <div class="step"
+               data-step="4"
+            style="height: 504px"
+            data-scrollama-index="5"
+           data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/old_man_aral_sea.jpg?v=1659343046114"
+            data-text="Ali Shaddinov - Fisherman, Muynak,Uzbekistan"
+            data-attribute="src"
+            data-target="imgObj"
+          >
+<p>
+  “First the sea left the people, then the people left the sea.”
+       </p></div><div class="step"
+                           data-step="5"
+            style="height: 504px"
+            data-scrollama-index="6">
+          <p>Ali Shaddinov was born in 1951 and he has lived at the Aral Sea in Muynak since he was 3 years old. His parents were fishermen and he worked as a fisherman before the Aral Sea receded.</p></div> <div class="step"
+     data-step="6"
+            style="height: 504px"
+            data-scrollama-index="7"
+                     data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/old_man_aral_sea.jpg?v=1659343046114"
+            data-text="Ali Shaddinov - Fisherman, Muynak,Uzbekistan"
+            data-attribute="src"
+            data-target="imgObj">
+<p>The last time Ali caught a fish was in 1977.</p></div>
+          
+          <div
+            class="step"
+            data-step="7"
+            style="height: 504px"
+            data-scrollama-index="8"
+                               data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/ship_graveyard.png?v=1659377819289"
+            data-text="Ship Graveyard, Muynak, Uzbekistan,
+Uzbekistan"
+            data-attribute="src"
+            data-target="imgObj"
+          >
+            <p>
+             At its peak in 1957, the Aral Sea produced almost 50,000 tons of
+                fish. The receding water level and rising salinity of the sea
+                meant that by the 1980s, few of the 20 native fish species were
+                left.
+            </p>
+          </div>
+          <div
+            class="step"
+            data-step="8"
+            style="height: 504px"
+            data-scrollama-index="9"
+                             data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/aerial_aral.jpg?v=1659384031109"
+            data-text="Aerial view - Rotting ships in the dried-up Aral Sea,
+Uzbekistan"
+            data-attribute="src"
+            data-target="imgObj"
+          >
+            <p>
+              In its heyday Muynak was one of the largest fishing cities in Central Asia, the clear water was full of fish and the beaches were a bustling tourist destination. 
+            </p>
+          </div>
+          <div
+            class="step"
+            data-step="9"
+            style="height: 504px"
+            data-scrollama-index="10"
+             
+          >
+            <p>By 1987, no fish could be caught commercially.</p>
+          </div>
+                    <div
+            class="step"
+            data-step="10"
+            style="height: 504px"
+            data-scrollama-index="11"
+          >
+            <p>Now the main attraction of Muynak city is the ship graveyard and, due to climate change, the city has turned into a desert. </p>
+          </div>
+          <div
+            class="step"
+            data-step="11"
+            style="height: 504px"
+            data-scrollama-index="12"
+          >
+<p>The local economy has evaporated along with the water.</p></div>
+
+
+        </article>
+      </section>
+
+      <section id="outro"> 
+      <div class ="outro__hed"
+            style="height: 304px"
+         > <p>
+        Next: We follow Mina on the African leg of her journey.
+          </p>
+      </div>
+         <div class ="outro__dek"
+            style="height: 304px"
+         >
+        <p>
+        Credits: Thirst Foundation
+          </p></div>
+     
+        
+        
+
+    </section>
+    </main>
+      
+    
+
+    <script src="d3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scrollama.min.js"></script>
+    <script>
+
+$(document).ready(function(){
+        // Function to be called when scrolling occurs
+        $(window).scroll(function() {
+          // Calculate the parallax effect for each tree based on the scroll position
+          var scrolled = $(window).scrollTop();
+          
+          $('.tree-1').css('transform', 'translateX(' + (scrolled * 0.4) + 'px)');
+          $('.tree-2').css('transform', 'translateX(' + (scrolled * 0.3) + 'px)');
+          $('.tree-3').css('transform', 'translateX(' + (scrolled * 0.1) + 'px)');
+        });
+      });
+
+
+      // using d3 for convenience
+      var main = d3.select("main");
+      var scrolly = main.selectAll(".scrolly");
+      var figure = scrolly.selectAll("figure");
+      var article = scrolly.selectAll("article");
+      var step = article.selectAll(".step");
+      const caption = document.getElementById("captionObj");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // generic window resize listener event
+      function handleResize() {
+        // 1. update height of step elements
+        var stepH = Math.floor(window.innerHeight * 0.75);
+        step.style("height", stepH + "px");
+
+        var figureHeight = window.innerHeight / 2;
+        var figureMarginTop = (window.innerHeight - figureHeight) / 6;
+
+        figure
+          .style("height", figureHeight + "px")
+          .style("top", figureMarginTop + "px");
+
+        // 3. tell scrollama to update new element dimensions
+        scroller.resize();
+      }
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        console.log(response);
+        // response = { element, direction, index }
+
+        // add color to current step only
+        step.classed("is-active", function (d, i) {
+          return i === response.index;
+      
+        });
+
+        // update graphic based on step
+        figure.select("p").text(response.index + 1);
+      document
+          .getElementById(response.element.dataset.target)
+          .setAttribute(
+            response.element.dataset.attribute,
+            response.element.dataset.value
+          );
+         // update caption for images based on step
+        if (response.element.dataset.target == "imgObj") {
+          let alt = response.element.dataset.text;
+          if (alt) {
+            caption.innerText = alt;
+          }
+        }
+      
+      }
+
+      function init() {
+        // 1. force a resize on load to ensure proper dimensions are sent to scrollama
+        handleResize();
+
+        // 2. setup the scroller passing options
+        // 		this will also initialize trigger observations
+        // 3. bind scrollama event handlers (this can be chained like below)
+        scroller
+          .setup({
+            step: ".step",
+            offset: 0.33,
+            debug: true,
+          })
+          .onStepEnter(handleStepEnter);
+      }
+
+      // kick things off
+      init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scrollytelling - Various Media Types with Flexbox</title>
+
+	<script src="https://unpkg.com/intersection-observer"></script>
+	<script src="https://unpkg.com/scrollama"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style type="text/css">
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Trebuchet MS, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #3b3b3b;
+  font-size: 24px;
+   background-color: rgba(0,0,0,0.1);
+  background-image: url("https://cdn.glitch.global/a1ac19ef-690e-447b-a7af-90ae67561b11/mina_desert.jpeg?v=1659720412670");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+ h1, h2 {
+  color: #8A8A8A;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 30rem;
+}
+
+h2 { font-size: 3rem; }
+
+article {
+        position: relative;
+        max-width: 20rem;
+      }
+    
+
+figure {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        z-index: 0; 
+      }
+    
+figure img, svg, iframe, video, audio {
+    border-radius: 25px 25px 25px 25px;
+        padding: 1rem;
+        background-color: rgba(255,255,255,0.2);
+      }
+    
+    
+.sticky{
+			position: -webkit-sticky;
+			position: sticky;
+      top:5rem;
+   border-radius: 25px;
+    }
+
+.gray{
+        background-color: rgba(255,255,255,0.1);
+    }
+
+.orange{
+        background-color: rgba(255,255,0,0.2);
+  
+  .containerObj{
+     border-radius: 25px;
+  }
+
+    }
+figcaption {
+  border-radius: 0px 0px 25px 25px;
+    	  text-align: left;
+        padding: 0rem 1rem 1rem 1rem;
+        font-size: 0.9rem;
+  background-color: rgba(255,255,255,0.2);
+		}
+
+#intro {
+  max-width: 40rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 320px;  
+}
+    
+.intro__hed {
+  font-size: 3rem;
+  margin: 2rem auto 0.5rem auto;
+}
+
+.intro__dek {
+  color: rgba(255,255,255,0.9);
+}
+    
+.scrolly {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 5rem;
+      }
+
+.scrolly > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+.step{
+        margin: 0 auto 1rem auto;
+        }
+    
+.step:last-child {
+        margin-bottom: 0;
+      }
+
+.step p {
+        text-align: left;
+        padding: 1rem;
+        font-size: 2.2rem;
+        background-color: rgba(255,255,255,0.2);
+        color:#000;
+      }
+.outro p:last-of-type {
+
+}
+.normal p {
+        text-align: left;
+        padding: 1rem;
+        font-size: 1.2rem;
+        background-color: rgba(255,255,255,0.2);
+        color:#000;
+
+      }
+svg:hover, img:hover, video:hover {
+  transform: rotate( 1deg );
+}
+
+	</style>
+</head>
+<body> <section id="intro">
+        <h1 class="intro__hed">Scrolly Flexbox Demo</h1>
+        <p class="intro__dek">
+          Start scrolling to see what happens
+        </p></section>
+        
+	<section class="scrolly">
+         <article>
+        	<div class="step" data-value="sticky gray" data-attribute="class" data-target="containerObj"><p>       
+        This is the first step, which gives the pic a grey background.</p></div><div class="normal"><p>   
+        My favorite color is grey.</p>
+        
+        <p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+			
+        <div class="step" data-value="sticky orange" data-attribute="class" data-target="containerObj"><p>The next step gives an orange background.</p></div><div class="normal"><p>
+        My next favorite color is orange.</p><p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+      <div class="step" data-value="https://cdn.glitch.global/a1ac19ef-690e-447b-a7af-90ae67561b11/wwf_water_risk_map.jpeg?v=1658824838379" data-text="Source: WWF Water risk map" data-attribute="src" data-target="imgObj"><p>The third step changes the image source to show a map.</p></div><div class="normal"><p>I like maps.</p><p>
+        It also changes the caption.<p> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+</div>
+   <div class="step" data-value="https://cdn.glitch.global/a1ac19ef-690e-447b-a7af-90ae67561b11/plastic_crocodile.jpeg?v=1658824845426" data-text="Plastic crocodile" data-attribute="src" data-target="imgObj"><p>This is the fourth step, which changes the image source to show a crocodile.</p></div>
+           <div class="normal">  
+       <p>I like crocodiles.</p>
+        <p>Yes it also changes the caption.
+        </p>   
+        </div></article>
+         <figure>
+		<div id="containerObj" class="sticky">
+      <img id="imgObj" alt="Plastic fish sculpture from Brazil" src="https://cdn.glitch.global/a1ac19ef-690e-447b-a7af-90ae67561b11/plastic_fish_brazil.jpeg?v=1658824850201" width=400 />
+        <figcaption id="captionObj">Plastic fish sculpture from Brazil</figcaption>
+		</div>
+      </figure>
+        </section>
+    	<section class="scrolly">
+        <article>
+			<div class="step" data-value="blue" data-attribute="fill" data-target="rectObj"><p>This is the fifth step, which changes the fill of the shape to blue.</div>
+          <div class="normal">
+            <p>I like blue shapes.</p>
+            <p> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+        </div>
+			<div class="step" data-value="#FF9900" data-attribute="fill" data-target="rectObj"><p>This is the sixth step, which changes the fill of the shape to orange.</p></div><div class="normal"><p>I like orange shapes.</p>
+        <p> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </article>
+         <figure>
+		<div class="sticky">
+			<svg width=400 height=400>
+				<rect id="rectObj" width=400 height=400 x=0 y=0 fill="#ddd">
+			</svg>
+        <figcaption>This is a caption</figcaption></div>
+      </figure>
+           
+        </section>
+    
+<section class="scrolly">
+        <article>
+        <div class="step" data-value="https://flo.uri.sh/visualisation/10745902/embed" data-text="Graph" data-attribute="src" data-target="iframeObj"><p>This is the seventh step, which changes the iframe to show a flourish bar graph.</p></div><div class="normal"><p>I like graphs.</p><p>
+            
+        Try to click it.
+        </p><p> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+          </div>
+                <div class="step" data-value="https://flo.uri.sh/visualisation/10743558/embed" data-text="Graph" data-attribute="src" data-target="iframeObj"><p>This is the eigth step, which changes the iframe to show a flourish network graph.</p></div><div class="normal"><p>Game of Thrones characters.</p><p>
+        Try to click it.
+        </p><p> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+          </div>
+           <div class="step" data-value="https://flo.uri.sh/visualisation/10745806/embed" data-text="Graph" data-attribute="src" data-target="iframeObj"><p>This is the ninth step, which changes the iframe to show a flourish data table.</p></div><div class="normal"><p>I like graphs.</p><p>
+            
+        Try to click it.
+        </p><p> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+            </article>
+   
+       <figure >
+	<div class="sticky">
+        <iframe id="iframeObj" src='https://flo.uri.sh/visualisation/10745902/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+    <figcaption>This is a caption</figcaption>
+         </div>
+      </figure>
+	
+	</section>
+            
+<section class="scrolly">
+        <article>
+                <div class="step" data-value="https://cdn.glitch.global/a1ac19ef-690e-447b-a7af-90ae67561b11/okavango.mp4?v=1659688449842" data-text="Video" data-attribute="src" data-target="videoObj"><p>The tenth step plays a  video.</p></div><div class="normal"><p>
+            
+        It's muted.
+        </p><p>I like videos.</p>
+          <p> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+          </div>
+           <div class="step" data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/aral_sea_07.mp4?v=1659381917939" data-text="Graph" data-attribute="src" data-target="videoObj"><p>The eleventh step also plays a new video.</p></div><div class="normal"><p>
+            
+       Also muted.
+        </p><p> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+            </article>
+   
+       <figure >
+	<div class="sticky">
+    <video
+          id="videoObj"
+          width="400"
+          autoplay
+          loop
+          muted
+          poster="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/ship_graveyard.png?v=1659377819289"
+        >
+          <source
+            src="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/aral_sea_07.mp4?v=1659381917939"
+            type="video/mp4"
+          />
+        </video>
+      <figcaption>This is a caption</figcaption>
+         </div>
+      </figure>
+	
+	</section>
+        <section class="scrolly">
+        <article>
+                <div class="step" data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/XC459496%20-%20South%20African%20Cliff%20Swallow%20-%20Petrochelidon%20spilodera.mp3?v=1661433087520" data-text="Audio" data-attribute="src" data-target="audioObj"><p>The next step plays a recording of the South African Cliff Swallow.</p></div><div class="normal"><p>
+            
+        It's muted.
+        </p><p>I like audio.</p>
+          <p> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+          </div>
+           <div class="step" data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/XC458468%20-%20South%20African%20Shelduck%20-%20Tadorna%20cana.mp3?v=1661433089953" data-text="Audio" data-attribute="src" data-target="audioObj"><p>The next step plays a recording of the South African Shelduck.</p></div><div class="normal"><p>
+            
+       Also muted.
+        </p><p> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>       
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+            </article>
+   
+       <figure >
+	<div class="sticky">
+    <audio
+          id="audioObj"
+          width="400"
+           controls
+          poster="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/ship_graveyard.png?v=1659377819289"
+        >
+          <source
+            src="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/XC458468%20-%20South%20African%20Shelduck%20-%20Tadorna%20cana.mp3?v=1661433089953"
+            type="audio/mp3"
+          />
+        </audio>
+      <figcaption>Caption goes here</figcaption>
+         </div>
+      </figure>
+	
+	</section>
+        
+	<section class="outro">
+		<div class="step">
+			<div><p>
+        The End.
+        </p></div>
+		</div>
+	</section>
+	<script type="text/javascript">
+
+	 const scroller = scrollama();
+   const caption = document.getElementById("captionObj");
+  scroller
+			.setup({
+				step: ".step",
+        offset: 0.2,
+			})
+			.onStepEnter((response) => {
+				console.log(response);
+           document.getElementById(response.element.dataset.target).setAttribute(response.element.dataset.attribute, response.element.dataset.value);
+  if  (response.element.dataset.target== "imgObj"){
+    let alt = response.element.dataset.text
+    if( alt )
+      { 
+      caption.innerText = alt;
+      }
+    }
+			});
+ 
+		window.addEventListener("resize", scroller.resize);
+	</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Scrollytelling templates for Multimedia</title>
+    <meta
+      name="description"
+      content="Scrollytelling templates for Multimedia"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h1 {
+        color: #000;
+      }
+      p,
+      h3 {
+        padding: 1rem;
+      }
+
+      p,
+      figcaption,
+      li {
+        font-size: 1rem;
+      }
+
+      .container {
+        width: 600px;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="intro__hed">Scrollytelling templates</h1>
+      <h2 class="intro__dek">For Multimedia Storytelling</h2>
+      <p>Marion Walton, University of Cape Town</p>
+      <h3>Overview</h3>
+      <p>
+        This is a basic intro to multimedia scrollytelling that demonstrates
+        scrollytelling techniques for use by Javascript novices. Templates
+        adapted from
+        <a
+          href="https://www.linkedin.com/learning/scrollytelling-creating-a-one-page-web-experience"
+          >Bill Shander's LinkedIn Tutorial</a
+        >
+        and two of
+        <a href="https://github.com/russellgoldenberg/scrollama#examples"
+          >Russel Goldenberg's templates.</a
+        >
+        Examples all use media from environmental activist Mina Guli's #runblue
+        campaign.
+      </p>
+      <p>
+        Start by planning your story. Choose the visuals first and then
+        <a
+          href="https://www.slideshare.net/AdamWestbrook/writing-to-pictures-the-basics"
+          >write to picture</a
+        >. If you don't have final media available yet, use placeholders and
+        sketches for your planning. Always test, review and revise the text
+        again once you have the final version of your media available. Keep your
+        text simple and short. Test the experience of reading while scrolling on
+        different screen sizes.
+      </p>
+      <p>Decide what the media (image or video) is doing in the story.</p>
+      <ul>
+        <li>
+          <em>Informational</em> (foreground image or chart, usually captioned)
+          - This should add information to your story, it would usually be
+          captioned. Instead of developing a very complex chart or diagram,
+          consider exporting the image or chart in different stages or versions
+          to accompany step-by-step textual commentary. This should help the
+          reader understand a complex process or chart by seeing it evolve as
+          they scroll through your textual explanation.
+        </li>
+        <li>
+          <em>Narrative</em> (foreground image or video, probably captioned) -
+          This tells a story either using a video or a still image with a strong
+          implied narrative. Add your scrolling text much as you would write a
+          script for narrative in a documentary - by
+          <a
+            href="https://www.slideshare.net/AdamWestbrook/writing-to-pictures-the-basics"
+            >writing to picture</a
+          >. Ensure that all important narrative details are legible in both
+          text and visuals. The user should be able to control video - play,
+          pause buttons etc.
+        </li>
+        <li>
+          <em>Atmospheric</em> (background audio, video or image) - Avoid using
+          autoplay for audio - rather allow the user to switch it on. If you use
+          a background video or image, this should not interfere with the
+          legibility of the text, but can be used creatively to hint at
+          narrative, foreshadow, flash back, highlight specific details etc.
+          Consider reducing contrast, or upping brightness to improve
+          legibility. Background video does not need a full set of controls.
+        </li>
+        <li>
+          <em>Optional</em> (e.g. user scrolls through a selection of short
+          audio clips) - You should be able to adapt the basic pattern of visual
+          scrollytelling to allow the user to navigate through a set of audio
+          clips e.g. by selecting different episodes / sections of a podcast or
+          scrolling to “meet” different participants in a vox pop. Scrolling is
+          usually a primarily visual interaction, so combine the audio clips
+          with suitable still images for best effect. As there is no visual cue
+          when a new audio file loads you will definitely need to add captions
+          or even add a background colour change so that the user can see there
+          has been a change in the audio.
+        </li>
+      </ul>
+      <p>
+        The readme.md file provides a more detailed guide to the different
+        templates (currently somewhat under construction).
+      </p>
+      <iframe src="README.md" width="100%" height="25%"> </iframe>
+
+      <h3>Example 1: Basic Flexbox</h3>
+
+      <a href="flexbox.html"
+        ><figure>
+          <img
+            src="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/basic_flexbox.png?v=1661329412275?v=1659890139451"
+            width="100%"
+          />
+          <figcaption>
+            Example 1 - Scrolling text alongside sticky content (image, svg,
+            chart, audio and video options).
+          </figcaption>
+        </figure></a
+      >
+      <h3>Example 2: Sticky Side Image</h3>
+      <a href="sticky_image.html">
+        <figure>
+          <img
+            src="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/sticky_image.png?v=1661329414083"
+            width="100%"
+          />
+          <figcaption>
+            Example 2 - Text scrolls past sticky image laid out to one side
+            using flexbox. Background video.
+          </figcaption>
+        </figure></a
+      >
+      <h3>Example 3: Sticky Image with Overlay</h3>
+      <a href="sticky_overlay.html">
+        <figure>
+          <img
+            src="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/sticky_overlay.png?v=1661329415319"
+            width="100%"
+          />
+          <figcaption>
+            Example 3 - Scrolling text overlay over sticky background image.
+            Background video.
+          </figcaption>
+        </figure>
+      </a>
+      <div>
+        <p>Media Credits: Thirst Foundation</p>
+      </div>
+    </div>
+  </body>
+</html>

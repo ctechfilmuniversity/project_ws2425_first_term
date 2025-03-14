@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Scrollama: Sticky Images (Based on Sticky Side Example)</title>
+    <meta name="description" content="Scrollama: Sticky Side Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      #intro {
+        max-width: 40rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 320px;
+      }
+
+      .intro__hed {
+        font-size: 3em;
+        margin: 2rem auto 0.5rem auto;
+        color: #fff;
+      }
+
+      .intro__dek {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      #scrolly {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 1rem;
+      }
+
+      #scrolly > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      main {
+        max-width: 800px;
+        margin: auto;
+      }
+      article {
+        position: relative;
+        padding: 0 1rem;
+        max-width: 20rem;
+      }
+
+      figure {
+        border-radius: 5px;
+        position: -webkit-sticky;
+        position: sticky;
+        margin: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        z-index: 0;
+      }
+      figure img {
+        border-radius: 5px;
+        padding: 0.1rem;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .frame {
+        border-radius: 5px;
+        position: -webkit-sticky;
+        position: sticky;
+        margin: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        z-index: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      figcaption {
+        text-align: left;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        font-weight: 1;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      /*used to display step numbers*/
+      figure p {
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .step {
+        margin: 0 auto 1rem auto;
+        color: #fff;
+        opacity: 0.2;
+      }
+
+      .step:last-child {
+        margin-bottom: 0;
+      }
+
+      .step.is-active {
+        color: #fff;
+        opacity: 1;
+      }
+
+      .step p {
+        border-radius: 5px;
+        text-align: left;
+        padding: 1rem;
+        font-size: 1.2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      #background-video {
+        width: 100vw;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section id="intro">
+        <video
+          id="background-video"
+          autoplay
+          loop
+          muted
+          poster="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/okavango.png?v=1659356636360"
+        >
+          <source
+            src="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/okavango.mp4?v=1659353211765"
+            type="video/mp4"
+          />
+        </video>
+
+        <h1 class="intro__hed">#RunBlue Africa</h1>
+        <p class="intro__dek">
+          Mina Guli is running 200 marathons to draw attention to the global
+          water crisis.
+        </p>
+      </section>
+
+      <section id="scrolly">
+        <article>
+          <!--  step/text container  -->
+          <div class="scroll__text">
+            <div
+              class="step"
+              data-step="1"
+              data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/running_398_410.png?v=1659701345317"
+              data-text="#RunBlue Africa"
+              data-attribute="src"
+              data-target="imgObj"
+            >
+              <p>
+                The #RunBlue teams ran with Mina Guli in these African
+                countries.
+              </p>
+            </div>
+            <div
+              class="step"
+              data-step="2"
+              data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/kenya.png?v=1659701772361"
+              data-text="#RunBlue Kenya"
+              data-attribute="src"
+              data-target="imgObj"
+            >
+              <p>
+                #RunBlue Kenya at Lake Naivasha highlighted the interdependent
+                role of the lake in agriculture, horticulture and all life
+                surrounding the lake.
+              </p>
+            </div>
+            <div
+              class="step"
+              data-step="3"
+              data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/tanzania.png?v=1659701737516"
+              data-text="#RunBlue Tanzania"
+              data-attribute="src"
+              data-target="imgObj"
+            >
+              <p>#RunBlue Tanzania's #RunningWaterHeroes ran with @MinaGuli.</p>
+            </div>
+            <div
+              class="step"
+              data-step="4"
+              data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/zambia.png?v=1659701750410"
+              data-text="#RunBlue Zambia"
+              data-attribute="src"
+              data-target="imgObj"
+            >
+              <p>
+                #RunBlue Zambia at @WWFZambia ran for conservation: "We ran for
+                the rivers that provide life and livelihoods for wildlife,
+                nature and people".
+              </p>
+            </div>
+            <div
+              class="step"
+              data-step="5"
+              data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/malawi.png?v=1659702597218"
+              data-text="#RunBlue Malawi"
+              data-attribute="src"
+              data-target="imgObj"
+            >
+              <p>
+                #RunBlue Malawi - "Water is life, but trees are also life -
+                where there are trees, there is water", explained Frackson
+                Kachiwawa, at Dzalanyama Forest Lodge in Malawi.
+              </p>
+            </div>
+            <div
+              class="step"
+              data-step="6"
+              data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/zimbabwe.png?v=1659701753176"
+              data-text="#RunBlue Zimbabwe"
+              data-attribute="src"
+              data-target="imgObj"
+            >
+              <p>
+                #RunBlue Zimbabwe - "Water is everything. It’s time we stopped
+                treating it as if it’s nothing."" #MosiOaTunya.
+              </p>
+            </div>
+            <div
+              class="step"
+              data-step="6"
+              data-value="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/south_africa.png?v=1659701735382?v=1659701753176"
+              data-text="Runblue South Africa"
+              data-attribute="src"
+              data-target="imgObj"
+            >
+              <p>
+                #RunBlue South Africa: Mina completed her #RunBlue Marathon 67
+                in South Africa
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!--  graphic container  -->
+        <figure>
+          <div class="frame">
+            <p>0</p>
+            <!--   actual graphic/chart   -->
+            <img
+              src="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/running_398_410.png?v=1659701345317"
+              width="100%"
+              id="imgObj"
+            />
+            <figcaption id="captionObj">#RunBlue Africa.</figcaption>
+          </div>
+        </figure>
+      </section>
+
+      <section id="outro"></section>
+    </main>
+
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="scrollama.min.js"></script>
+    <script>
+      // using d3 for convenience
+      var main = d3.select("main");
+      var scrolly = main.select("#scrolly");
+      var figure = scrolly.select("figure");
+      var article = scrolly.select("article");
+      var step = article.selectAll(".step");
+      const caption = document.getElementById("captionObj");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // generic window resize listener event
+      function handleResize() {
+        // 1. update height of step elements
+        var stepH = Math.floor(window.innerHeight * 0.75);
+        step.style("height", stepH + "px");
+
+        var figureHeight = window.innerHeight / 2;
+        var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+        figure
+          .style("height", figureHeight + "px")
+          .style("top", figureMarginTop + "px");
+
+        // 3. tell scrollama to update new element dimensions
+        scroller.resize();
+      }
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        console.log(response);
+        // response = { element, direction, index }
+
+        // add color to current step only
+        step.classed("is-active", function (d, i) {
+          return i === response.index;
+        });
+
+        // update graphic based on step
+        figure.select("p").text(response.index + 1);
+
+        document
+          .getElementById(response.element.dataset.target)
+          .setAttribute(
+            response.element.dataset.attribute,
+            response.element.dataset.value
+          );
+        if (response.element.dataset.target == "imgObj") {
+          let alt = response.element.dataset.text;
+          if (alt) {
+            caption.innerText = alt;
+          }
+        }
+      }
+
+      function setupStickyfill() {
+        d3.selectAll(".sticky").each(function () {
+          Stickyfill.add(this);
+        });
+      }
+
+      function init() {
+        setupStickyfill();
+
+        // 1. force a resize on load to ensure proper dimensions are sent to scrollama
+        handleResize();
+
+        // 2. setup the scroller passing options
+        // 		this will also initialize trigger observations
+        // 3. bind scrollama event handlers (this can be chained like below)
+        scroller
+          .setup({
+            step: "#scrolly article .step",
+            offset: 0.33,
+            debug: false,
+          })
+          .onStepEnter(handleStepEnter);
+
+        // setup resize event
+        window.addEventListener("resize", handleResize);
+      }
+
+      // kick things off
+      init();
+    </script>
+  </body>
+</html>

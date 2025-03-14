@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://russellgoldenberg.github.io/scrollama/sticky-overlay/ -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>No Water No Life - Scrollable video example</title>
+    <meta name="description" content="No Water No Life - Scrollable video example with Scrollama Sticky Overlay" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+         background-color: #000;
+      }
+      
+      #intro {
+        max-width: 40rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 320px;
+      }
+
+      .intro__hed {
+        font-size: 3rem;
+        margin: 2rem auto 0.5rem auto;
+      }
+
+      .intro__dek {
+        color: rgba(255, 255, 255, 0.55);
+      }
+
+      figcaption {
+        text-align: left;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        font-weight: 1;
+        color: rgba(255, 255, 255, 0.2);
+      }
+
+
+      figure {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100vw;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        background-color: #8a8a8a;
+        z-index: 0;
+      }
+      
+      .frame {
+        position: -webkit-sticky;
+        position: sticky;
+        margin: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        z-index: 0; 
+        background-color: rgba(0,0,0,0.95);
+      }
+
+      figure p {
+        text-align: left;
+        padding: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgba(255, 255, 255, 1);
+      }
+
+    .scrolly {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 0;
+      }
+
+      article {
+        position: relative;
+        padding: 0;
+        max-width: 40rem;
+        margin: 0 auto;
+      }
+
+      
+      .step {
+        margin: 0 auto 2rem auto;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      .step:last-child {
+        margin-bottom: 0;
+      }
+
+      .step.is-active p {
+       background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      #background-video {
+        width: 100vw;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3,
+      .bgimg-4 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      /* First image (Logo. Full height) */
+      .bgimg-1 {
+        background-image: url("https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/old_man_aral_sea.jpg?v=1659343046114");
+        min-height: 100%;
+      }
+      
+      /* Second image (Logo. Full height) */
+      .bgimg-2 {
+        background-image: url("https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/aerial_aral.jpg?v=1659384031109");
+        min-height: 100%;
+      }
+      
+      /* Second image (Logo. Full height) */
+      .bgimg-3 {
+        background-image: url("https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/tree_river.png?v=1659426506029");
+        min-height: 100%;
+      }
+      /* Second image (Logo. Full height) */
+      .bgimg-4 {
+        background-image: url("https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/forest_aerial.png?v=1659433214116");
+        min-height: 100%;
+      }
+      .caption {
+        max-width: 40rem;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 320px;
+        position: relative;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 2rem;
+      }
+      
+      .parallax p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        max-width: 40rem;
+        margin: 0 auto 2rem auto;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      
+      #video-element {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        max-width: 40rem;
+        margin: 0 auto 2rem auto;
+         background-color: rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section id="intro">
+        <video
+          id="background-video"
+          autoplay
+          loop
+          muted
+          poster="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/ship_graveyard.png?v=1659377819289"
+        >
+          <source
+            src="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/aral_sea_07.mp4?v=1659381917939"
+            type="video/mp4"
+          />
+        </video>
+
+        <h1 class="intro__hed">No Water, No Life</h1>
+        <p class="intro__dek">
+          Take action on the world water crisis
+        </p>
+        
+      </section>
+      <div class="caption"><p>
+        Environmental activist Mina Guli set out to run 200 marathons in 2022 to raise awareness of the global water crisis.
+        </p></div><div class="caption"><p>For Marathon 28, Mina ran across the dried bed of the Aral Sea.</p></div>
+      <div class="caption"><p>
+         Formerly the world's fourth largest lake, the Aral Sea dried up when the region's rivers were diverted for cotton farming.  Fishing boats and the people who relied on them were left stranded as the water dried up.</p></div>
+
+      <div class="bgimg-1"><div class="caption">
+<p>Ali Shaddinov was born in 1951 and he has lived at the Aral Sea in Muynak since he was 3 years old. His parents were fishermen and he worked as a fisherman before the Aral Sea receded.</p></div> <div class="caption">
+<p>The last time Ali caught a fish was in 1977.</p></div></div>
+<div class="external_video">
+       <iframe width="100%" height="600" src="https://www.youtube-nocookie.com/embed/YTJu2bicgKY?start=22" title="First the sea left the people" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>      
+      <section class="scrolly">
+        <figure style="height: 336.5px; top: 168.25px">
+          <div class="frame">
+            <p>0</p>
+            <!--   actual graphic/chart   -->
+            <img
+              src="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/ship_graveyard.png?v=1659377819289"
+              width="100%"
+            />
+            <figcaption>Ship Graveyard, Muynak, Uzbekistan </figcaption>
+          </div>
+        </figure>
+
+        <article>
+          <div
+            class="step"
+            data-step="1"
+            style="height: 504px"
+            data-scrollama-index="0"
+          >
+            <p>
+              “First the sea left the people, then the people left the sea.”
+            </p>
+          </div>
+          <div
+            class="step"
+            data-step="2"
+            style="height: 504px"
+            data-scrollama-index="1"
+          >
+            <p>
+             At its peak in 1957, the Aral Sea produced almost 50,000 tons of
+                fish. The receding water level and rising salinity of the sea
+                meant that by the 1980s, few of the 20 native fish species were
+                left.
+            </p>
+          </div>
+          <div
+            class="step"
+            data-step="3"
+            style="height: 504px"
+            data-scrollama-index="2"
+          >
+            <p>
+              In its heyday Muynak was one of the largest fishing cities in Central Asia, the clear water was full of fish and the beaches were a bustling tourist destination. 
+            </p>
+          </div>
+          <div
+            class="step"
+            data-step="4"
+            style="height: 504px"
+            data-scrollama-index="3"
+          >
+            <p>By 1987, no fish could be caught commercially.</p>
+          </div>
+                    <div
+            class="step"
+            data-step="5"
+            style="height: 504px"
+            data-scrollama-index="4"
+          >
+            <p>Now the main attraction of Muynak city is the ship graveyard and, due to climate change, the city has turned into a desert. The local economy has evaporated along with the water.</p>
+          </div>
+          <div
+            class="step"
+            data-step="6"
+            style="height: 504px"
+            data-scrollama-index="5"
+          >
+<p>Mina Guli ran across the dried bed of the Aral Sea for Marathon 28.</p></div>
+        </article>
+      </section>
+
+      <section id="outro"> 
+        <div class="bgimg-3"><div class="caption"><p>
+        Mina also ran in Dzalanyama Forest in Malawi. Dzalanyama looks different to Muynak but is also affected by the water crisis.
+        </p>
+           <div class="bgimg-4"><div class="caption"><p>
+         In Dzalanyama, people are taking action to protect water by protecting trees.</p>
+        </div> <div class="caption">
+<p>Forests are often referred to as the lungs of our planet, and water as the lifeblood that flows through it. If we think about the body's anatomy, the body can not function without either. </p></div> <div class="caption">
+             <p>In the same way our planet cannot perform optimally without water and trees.</p></div></div></div>
+         <div class="frame"><video
+          
+          autoplay
+          loop
+          muted
+          preload="metadata"
+          width="100%"
+          poster="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/forest_aerial.png?v=1659433214116"
+        >
+          <source
+            src="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/forest_malawi.mp4?v=1659432890901"
+            type="video/mp4"
+          />
+           </video></div>
+        
+        <div class="caption"><p>
+        Water is life, but trees are also life - where there are trees, there is water, explains Frackson Kachiwawa, Dzalanyama Forest Lodge Manager.
+        </p><p>
+        We must do everything in our power to preserve our water and forests for future generations.
+          </p></div><div class="bgimg-4" >
+        
+        </div><div class="external_video"><div class="frame">
+       <iframe width="100%" height="600" src="https://www.youtube-nocookie.com/embed/0FTpFssqlxU?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div> </div> </div>    <div class="bgimg-2"></div><div class="caption"><div class="flourish-embed flourish-map" data-src="visualisation/10806502"><script src="https://public.flourish.studio/resources/embed.js"></script></div><p>
+        Follow Mina on the African leg of her journey.
+          </p></div><div class="frame">
+     
+         <video
+      id="videoelement"
+                src="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/okavango.mp4?v=1659353211765"
+      poster="https://cdn.glitch.global/63423c5f-5098-4a28-8b25-50cda668df62/okavango.png?v=1659356636360"
+      
+      preload="metadata"
+      width="100%"
+    ></video>
+
+    <div id="mediacontrols">
+      <div id="controlbarrail">
+        <div id="controlbarfill"></div>
+      </div>
+
+      <button id="playbutton">Play</button>
+      <button id="pausebutton">Pause</button>
+
+      <div id="timedisplay">
+        <time id="positiondisplay">00:00</time>
+        <time id="durationdisplay">00:00</time>
+      </div>
+          </div></div><div class="link"><p>
+        Credits - Forthcoming from Thirst Foundation
+          </p></div>
+        
+        
+
+    </section>
+    </main>
+      
+    <script>
+      var media = document.querySelector("#videoelement");
+      var play = document.querySelector("#playbutton");
+      var pause = document.querySelector("#pausebutton");
+      var position = document.querySelector("#positiondisplay");
+      var duration = document.querySelector("#durationdisplay");
+      var rail = document.querySelector("#controlbarrail");
+      var fill = document.querySelector("#controlbarfill");
+
+      play.addEventListener("click", playMedia);
+      function playMedia() {
+        media.play();
+      }
+
+      pause.addEventListener("click", pauseMedia);
+      function pauseMedia() {
+        media.pause();
+      }
+
+      rail.addEventListener("click", seekMedia);
+      fill.addEventListener("click", seekMedia);
+      function seekMedia(e) {
+        media.currentTime = (e.offsetX / rail.offsetWidth) * media.duration;
+      }
+
+      media.addEventListener("loadedmetadata", updateTime);
+      media.addEventListener("timeupdate", updateTime);
+      function updateTime() {
+        position.textContent = timeDisplay(media.currentTime);
+        duration.textContent = timeDisplay(media.duration);
+        var currentlength =
+          rail.clientWidth * (media.currentTime / media.duration);
+        fill.style.width = currentlength + "px";
+      }
+
+      function timeDisplay(t) {
+        var minutes = Math.floor(t / 60);
+        var seconds = Math.floor(t - minutes * 60);
+        var minutevalue;
+        if (minutes < 10) {
+          minutevalue = "0" + minutes;
+        } else {
+          minutevalue = minutes;
+        }
+        var secondvalue;
+        if (seconds < 10) {
+          secondvalue = "0" + seconds;
+        } else {
+          secondvalue = seconds;
+        }
+        var mediatime = minutevalue + ":" + secondvalue;
+        return mediatime;
+      }
+
+//extra function - watch for spacebar key press in order to play and pause video 
+      document.onkeydown = function (event) {
+        switch (event.keyCode) {
+          case 32:
+            event.preventDefault();
+            playPause();
+            break;
+        }
+      };
+
+      function playPause() {
+        if (media.paused) {
+          media.play();
+        } else {
+          media.pause();
+        }
+      }
+       </script>
+
+    <script src="d3.min.js"></script>
+    <script src="scrollama.min.js"></script>
+    <script>
+      // using d3 for convenience
+      var main = d3.select("main");
+      var scrolly = main.selectAll(".scrolly");
+      var figure = scrolly.selectAll("figure");
+      var article = scrolly.selectAll("article");
+      var step = article.selectAll(".step");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // generic window resize listener event
+      function handleResize() {
+        // 1. update height of step elements
+        var stepH = Math.floor(window.innerHeight * 0.75);
+        step.style("height", stepH + "px");
+
+        var figureHeight = window.innerHeight / 2;
+        var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+        figure
+          .style("height", figureHeight + "px")
+          .style("top", figureMarginTop + "px");
+
+        // 3. tell scrollama to update new element dimensions
+        scroller.resize();
+      }
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        console.log(response);
+        // response = { element, direction, index }
+
+        // add color to current step only
+        step.classed("is-active", function (d, i) {
+          return i === response.index;
+      
+        });
+
+        // update graphic based on step
+        figure.select("p").text(response.index + 1);
+      }
+
+      function init() {
+        // 1. force a resize on load to ensure proper dimensions are sent to scrollama
+        handleResize();
+
+        // 2. setup the scroller passing options
+        // 		this will also initialize trigger observations
+        // 3. bind scrollama event handlers (this can be chained like below)
+        scroller
+          .setup({
+            step: ".step",
+            offset: 0.33,
+            debug: true,
+          })
+          .onStepEnter(handleStepEnter);
+      }
+
+      // kick things off
+      init();
+    </script>
+  </body>
+</html>
