@@ -4,8 +4,9 @@
 
 _The full documentation alongside the download can be found on the website_
 
-- [discussion & reflection](https://knoto.whatphilipdoes.com/log/12-discussion/)
-- [future work](https://knoto.whatphilipdoes.com/log/13-next-steps/)
+- [results](https://knoto.whatphilipdoes.com/log/12-results/)
+- [discussion & reflection](https://knoto.whatphilipdoes.com/log/13-discussion/)
+- [future work](https://knoto.whatphilipdoes.com/log/14-next-steps/)
 
 _Direct links to some distinct key requirements in the documentation. My development log functions as the work diary. Since my log is the centerpiece of the project website other aspects like context, related work or next steps can be found in there (eg. 'about liquid networks')_
 
