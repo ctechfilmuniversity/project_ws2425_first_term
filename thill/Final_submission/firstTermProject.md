@@ -7,6 +7,8 @@ God Complex
 
 ## **Description**
 
+<img src=img/Opener.png alt="Opener" width="600">
+
 ### **A Landscape of Control and Creation**
 
 **God Complex** is an interactive audio-visual experience where the participant assumes the role of an unseen force, capable of reshaping a fictive world through sound and visual manipulation. Developed using Unreal Engine and Ableton, the project leverages real-time rendering and procedural sound design to create an immersive environment that responds dynamically to user interaction. **Unreal Engine** provides a framework for constructing a visually rich, interactive world, allowing for seamless changes in lighting, vegetation, and environmental dynamics. **Ableton** facilitates the adaptive soundscape, ensuring that auditory elements shift in parallel with visual transformations, reinforcing the user's sense of control.
@@ -167,7 +169,7 @@ Looking ahead, several key takeaways will inform future projects. A deeper under
 ## **9. Final Notes**
 ### **Project File & Dependencies**
 
-Download project files [here](https://mega.nz/file/ubZ1jBhb#buZXGRKWfByf3TOtytoj6CgdulH960pEiYebfBGmMsY)
+Download Unreal Project file [here](https://mega.nz/file/ubZ1jBhb#buZXGRKWfByf3TOtytoj6CgdulH960pEiYebfBGmMsY)and Ableton project file [here](https://mega.nz/file/aSIjCQTY#gbOX_Ts01CnV9RL5S8vegRGNltdTvgLBplce3F_Scmg)
 
 To recreate the project, install:
 - **On Windows PC:** rtpMIDI, Unreal Engine 5.4
@@ -180,15 +182,30 @@ To recreate the project, install:
 
 **On Mac OS(running Ableton):**
 
-<img src=img/Midi_Setup_Mac.png alt="alt text" width="600">
+<img src=img/Midi_Setup_Mac.png width="600">
 
 **On Windows(running Unreal Engine):**
 
-<img src=img/Midi_Setup_Windows.png alt="alt text" width="600">
+<img src=img/Midi_Setup_Windows.png width="600">
+
+**Ableton Midi Settings:**
+
+<img src=img/Ableton_Midi_Settings.png width="600">
+
+**Motion design plugin (inside Unreal Engine)**:
+
+<img src=img/Motion_Design.png width="600">
+
+**Remote control midi (inside Unreal Engine)**:
+
+<img src=img/Remote_Midi.png width="600">
+
+**Virtual texture (inside Unreal Engine)**:
+
+<img src=img/Virtual_Texture.png width="600">
 
 
-
- **This document, along with the website, forms the final project submission for the God Complex project.**
+**This document, along with the website, forms the final project submission for the God Complex project.**
 
 
 
