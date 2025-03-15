@@ -2,12 +2,12 @@
 
 ## **1. Project Overview**
 
-### **Title:**
-God Complex
-
 ### **Website**
 
-Link to my website is [here](https://first-term-project-thill.vercel.app)
+[Link to my website](https://first-term-project-thill.vercel.app)
+
+### **Title:**
+God Complex
 
 ## **Description**
 
