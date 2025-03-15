@@ -757,7 +757,7 @@ The sounds that will be played randomly are in [this folder](https://owncloud.gw
 
 ### "**THE AIR SYSTEM**": 
 
-As I already mentioned was my final project for CC1, here is the diagram of the data flow: 
+As I already mentioned this was my final project for CC1, here is the diagram of the data flow: 
 
 ![image alt](https://github.com/ctechfilmuniversity/project_ws2425_first_term/blob/489a021e4538fc3b338264407f4c56b6d03ae70f/Piraz%C3%A1nPalomar/img%20Final/13_Diagramm.png)
 
