@@ -146,6 +146,11 @@ Working with Unreal Engine for interactive design presented a steep learning cur
 ## **7. Next Steps & Future Work**
 
 Future developments will focus on expanding the range of MIDI-to-visual interactions, incorporating additional parameters and audio-reactive elements. Optimisation efforts will continue to refine rendering performance, ensuring smoother real-time execution. Another potential area of expansion involves enabling multiplayer interaction, allowing multiple users to manipulate different aspects of the world simultaneously.
+
+Additionally, I plan to design and build custom physical controllers that aesthetically align with the holographic entity, enhancing the tactile and visual coherence of the installation. I am also interested in exploring the possibility of adding more projections from different points of view, providing alternative perspectives on the evolving landscape.
+
+Beyond installation-based interactions, I have started considering how God Complex could be adapted into a live performance format. During user testing, I experimented with accompanying the soundtrack and visuals with live piano music, which added a new dimension to the experience. This approach has sparked my interest in developing a version where the performance aspect becomes a central element. Here is a short excerpt from that session.
+
 ## **8. Reflection & Learning Outcomes**
 
 ### **Challenges Overcome**
@@ -161,6 +166,9 @@ Looking ahead, several key takeaways will inform future projects. A deeper under
 
 ## **9. Final Notes**
 ### **Project File & Dependencies**
+
+Download project files [here](https://mega.nz/file/ubZ1jBhb#buZXGRKWfByf3TOtytoj6CgdulH960pEiYebfBGmMsY)
+
 To recreate the project, install:
 - **On Windows PC:** rtpMIDI, Unreal Engine 5.4
 - **On Macbook:** Ableton Live 12 (Newest beta version)
@@ -168,7 +176,17 @@ To recreate the project, install:
 
 - **Setup Details**
 
-- Ableton has to be setup correctly for the connection to work. Midi Routing has to be 
+- Ableton has to be setup correctly for the connection to work. Midi Routing has to be set like in the following screenshots:
+
+**On Mac OS(running Ableton):**
+
+<img src=img/Midi_Setup_Mac.png alt="alt text" width="600">
+
+**On Windows(running Unreal Engine):**
+
+<img src=img/Midi_Setup_Windows.png alt="alt text" width="600">
+
+
 
  **This document, along with the website, forms the final project submission for the God Complex project.**
 
