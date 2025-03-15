@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <title>God Complex - Project Documentation</title>
+    <style>
+        body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 40px;
+        line-height: 1.6;
+        }
+        h1 {
+        font-family: 'Iceberg', sans-serif;
+        font-size: 60px;
+        line-height: 1.1;
+        color: #333;
+        }
+
+        h2 {
+        font-family: 'Iceberg', sans-serif;
+        font-size: 36px;
+        color: #333;
+        }
+/* 
+        h3 {
+        font-family: 'Jacquard 12', sans-serif;
+        font-size: 28px;
+        color: #333;
+        } */
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .thin {
+            font-weight: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>God Complex - <br> Project Overview</h1>
+
+        <div class="section">
+            <h2>Description</h2>
+            <h3>A Landscape of Control and Creation</h3>
+            <p><strong>God Complex</strong> is an interactive audio-visual experience where participants assume the role of an unseen force, capable of reshaping and influencing a dynamic 
+                world through both sound and visual manipulation. The project blends real-time rendering techniques in <strong>Unreal Engine</strong> with procedural sound design in 
+                <strong>Ableton Live</strong>, resulting in an immersive environment that reacts instantly to user input via a <strong>MIDI controller</strong>. This control system enables 
+                participants to interact with different aspects of the world, transforming its landscape, altering time, and shaping its cultural and technological progress.</p>
+            
+            <video width="800" controls>
+                <source src="videos/MAIN.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    
+
+            <p>The virtual environment begins as a barren, motionless landscape—a world in its most primitive state. A central rock formation acts as the focal point of the space, housing a 
+                holographic entity that fluctuates in intensity and form based on user interaction. As the participant manipulates the controls, the world undergoes significant changes, 
+                evolving in response to their input:</p>
+            
+            <ul>
+                <li>The movement of the sun across the sky alters the color palette and shifts the harmonic mode of the accompanying music, jumping between four distinct musical 
+                    states (Major Scale, Minor Scale, Melodic Minor Up Scale, and C Mixolydian b6 Scale), influencing the overall emotional tone of the experience.</li>
+                <li>Rotating the sun from day to night modifies percussive elements, transitioning drum timbres from bright and crisp to dark and muted, reinforcing the shift in atmosphere.</li>
+                <li>Vegetation begins to sprout across the terrain, accompanied by organic sound elements such as rustling leaves and environmental reverb, emphasizing the expansion of 
+                    life within the world.</li>
+                <li>The holographic entity morphs continuously, serving as a visual representation of the world’s transformation.</li>
+                <li>The technological progression of the world introduces futuristic structures and industrial elements, with the mystical monument evolving into a controlled energy 
+                    source that powers an emerging civilization. This transition is reflected in the soundscape, incorporating electronic textures, distorted percussions, and synthetic harmonics.</li>
+            </ul>
+            
+            <p>Adding depth to the world are three humanoid figures kneeling in prayer before the central formation. These figures serve both as a reference for scale and as a symbolic 
+                representation of human devotion to forces beyond their control—whether natural, mystical, or technological. Their presence remains constant even as the world around them 
+                changes, reinforcing the theme of tradition persisting in the face of transformation.</p>
+        </div>
+
+        <div class="section">
+            <h2>Modes of Interaction: Fixed Perspective vs. Exploratory Mode</h2>
+            <p>God Complex provides two distinct interaction modes, each offering a unique approach to experiencing and manipulating the world:</p>
+            
+            <h3>1. Fixed Perspective Mode</h3>
+            <p>In this mode, the participant observes the world from a predefined, stationary vantage point. Interaction is focused on broad, macro-level adjustments to the environment, allowing for an analytical perspective on the transformation process. The emphasis is placed on composition, contrast, and harmony, enabling the user to sculpt the world much like a digital artist painting with movement and sound.</p>
+            
+            <h3>2. Exploratory Mode</h3>
+            <p>Exploratory Mode grants the participant full navigational control, allowing them to move through the world freely. This mode creates a deeper sense of immersion, making the experience more tangible and personal. Users can inspect their changes up close, interact with the evolving landscape from different angles, and witness the consequences of their manipulations in real-time.</p>
+            
+            <video width="800" controls>
+                <source src="videos/POV.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <p>When multiple users engage simultaneously—one in Fixed Perspective Mode and another in Exploratory Mode—an unexpected dynamic emerges, turning the experience into a live performance where one user sculpts the world while the other physically explores it. This interplay further enhances the themes of authorship, influence, and control.</p>
+        </div>
+
+        <div class="section">
+            <h2>Context and Related Work</h2>
+            <p>This project builds upon previous explorations in digital world-building, particularly the visual language developed in <em>Subsurface</em>, a fully CGI music 
+                video depicting a futuristic dystopian landscape. While <em>Subsurface</em> was a linear, pre-rendered experience, <strong>God Complex</strong> shifts towards 
+                real-time interactivity, allowing users to influence and shape the environment dynamically.</p>
+            <p>Influences for this project also include the live performances and visual aesthetics of <a href="https://www.instagram.com/iglooghost/">Iglooghost</a>, whose 
+                experimental use of animated visuals and music has informed the interplay between sound and imagery in <strong>God Complex</strong>.</p>
+        </div>
+
+        <div class="section">
+            <h2>Technical Setup & Implementation</h2>
+            <h3>System Diagram & Tech Stack</h3>
+            <p><strong>Software:</strong> Unreal Engine 5.4, Ableton Live 12 (Beta), Cinema4D, Daz Designer, Substance Painter</p>
+            <p><strong>Hardware:</strong> MIDI controller (Xone K2), high-performance PC for real-time rendering, ethernet cable for communication between software components.</p>
+            <p><strong>Plugins & Tools:</strong></p>
+            <ul>
+                <li>Unreal Engine Motion Design Plugin</li>
+                <li>Remote Control MIDI Plugin</li>
+                <li>Substrate Shader System for dynamic material effects</li>
+                <li>Virtual Textures for high-resolution material rendering</li>
+            </ul>
+            <p>The core technical challenge was ensuring real-time responsiveness between MIDI input and visual/audio output. The project leverages <strong>Blueprint scripting</strong> 
+                in Unreal Engine to map MIDI parameters to dynamic elements within the scene, while procedural audio elements in Ableton Live evolve in response to these interactions.</p>
+        </div>
+
+        <div class="section">
+            <h2>Research & Experimentation</h2>
+            <p>The development process involved extensive experimentation with Unreal Engine’s <strong>Blueprint system</strong>, seeking efficient ways to link MIDI input to interactive 
+                elements. Various approaches were tested, including direct MIDI-to-object control and event-driven scripting. Performance optimization was a major focus, as real-time 
+                rendering demands careful balancing of assets and effects.</p>
+        </div>
+
+        <div class="section">
+            <h2>Work Diary & Development Process</h2>
+            <h3>January 2024 - Concept Development</h3>
+            <p>Defined the core theme of <strong>God Complex</strong>, focusing on the relationship between creation and control.</p>
+            <h3>February 2024 - Technical Challenges</h3>
+            <p>Encountered significant stability issues with Unreal Engine, particularly when handling complex FBX imports. Early implementation of MIDI control revealed limitations in 
+                Unreal’s native MIDI support, leading to an exploration of third-party plugins.</p>
+            <h3>March 2024 - Refinements & Optimisation</h3>
+            <p>Finalized the interaction logic, improved performance, and optimized rendering pipeline for a smooth user experience.</p>
+        </div>
+
+        <div class="section">
+            <h2>Results & Discussion</h2>
+            <p>The project successfully integrates <strong>MIDI-controlled interaction</strong> with Unreal Engine, creating a responsive real-time system. Users can influence the world 
+                in intuitive ways, reinforcing the theme of intervention and control. However, limitations in certain plugins and a persistent Unreal Engine sun rotation bug created technical 
+                constraints that had to be worked around.</p>
+        </div>
+
+        <div class="section">
+            <h2>Reflection & Learning Outcomes</h2>
+            <p>The steep learning curve of Unreal Engine’s <strong>Blueprint scripting</strong> presented challenges but ultimately provided valuable experience in interactive design. The project 
+                highlighted the importance of balancing visual complexity with performance efficiency.</p>
+        </div>
+
+        <div class="section">
+            <h2>Next Steps & Future Work</h2>
+            <p>Future developments will focus on expanding the range of <strong>MIDI-to-visual interactions</strong>, incorporating additional parameters and audio-reactive elements. Optimisation 
+                efforts will continue to refine rendering performance, ensuring smoother real-time execution. Another potential area of expansion involves enabling <strong>multiplayer 
+                    interaction</strong>, allowing multiple users to manipulate different aspects of the world simultaneously.</p>
+            
+            <p>Additionally, I plan to design and build <strong>custom physical controllers</strong> that aesthetically align with the holographic entity, enhancing the tactile and 
+                visual coherence of the installation. These controllers would provide a more intuitive and immersive way for participants to interact with the world, blending the digital 
+                and physical aspects seamlessly.</p>
+            
+            <p>I am also interested in exploring the possibility of adding <strong>more projections from different points of view</strong>, providing alternative perspectives on the 
+                evolving landscape. This approach could offer a more layered and multidimensional experience, allowing participants to engage with the project from multiple vantage points.</p>
+            
+            <p>Beyond installation-based interactions, I have started considering how <strong>God Complex</strong> could be adapted into a <strong>live performance format</strong>. 
+                During user testing, I experimented with accompanying the soundtrack and visuals with live piano music, which added a new dimension to the experience. 
+                This approach has sparked my interest in developing a version where the <strong>performance aspect</strong> becomes a central element, integrating real-time audiovisual 
+                manipulation with live instrumental play. </p>
+            
+            <p class="thin">Here is a short excerpt from that session, where I improvised simple melodies to highlight the transitions between different modes:</p>
+
+            <video width="800" controls>
+                <source src="videos/live.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="section">
+            <h2>Final Notes</h2>
+            <p><strong>Project File & lDependencies:</strong> Unreal Engine 5.4, Ableton Live 12 Beta, required plugins listed above.</p>
+            <p>The project is designed for easy replication, with setup instructions ensuring compatibility across different systems.</p>
+        </div>
+    </div>
+</body>
+</html>
