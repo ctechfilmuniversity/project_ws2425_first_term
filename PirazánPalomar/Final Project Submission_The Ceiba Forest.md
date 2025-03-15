@@ -89,7 +89,7 @@ The Ceiba tree (Kapok tree) is a magnificent species originated in pre-Hispanic 
 
      Another interesting example made by  _MLF_ is the project _**“Forest Bathing: Lupuna”**_, commissioned by the _Thermengruppe Josef Wund_; where the audiovisual installative experience meets nature through wellness. The audiovisual material was made thanks to the use of Lidar scanning & Photogrammetry Processes.
 
-     Going deeper into the experimental side of the audiovisual I want to mention the work of _BIl Viola_, particularly the video _**"The reflecting pool"**_, because it makes me think about the potential of the audiovisual not only as a documentation of the concrete world, but rather as a wiggle room where the visible, the invisible, the synchronism and asynchronism coexist. 
+     Going deeper into the experimental side of the audiovisual I want to mention the work of _BIll Viola_, particularly the video _**"The reflecting pool"**_, because it makes me think about the potential of the audiovisual not only as a documentation of the concrete world, but rather as a wiggle room where the visible, the invisible, the synchronism and asynchronism coexist. 
 
      [![Rolf Lauter: Bill Viola: The Reflecting Pool, 1979. Lecture Museum für Moderne Kunst, Frankfurt 1994](https://img.youtube.com/vi/CSEkrV2TLs8/0.jpg)](https://www.youtube.com/watch?v=CSEkrV2TLs8 "Rolf Lauter: Bill Viola: The Reflecting Pool, 1979. Lecture Museum für Moderne Kunst, Frankfurt 1994")
 
@@ -109,7 +109,8 @@ The Ceiba tree (Kapok tree) is a magnificent species originated in pre-Hispanic 
 
      [![Olafur Eliasson 'Beauty' 1993](https://img.youtube.com/vi/BeSlK0RvHd0/0.jpg)](https://www.youtube.com/watch?v=BeSlK0RvHd0 "Olafur Eliasson 'Beauty' 1993")
 
-     Another work of _Eliasson_ that I like is _**"Waterfall"**_. It was presented in New York 2008 and in Versailles 2016. Again, the natural elements as past of the installations is something that I feel passionate about. 
+     Another work of _Eliasson_ that I like is _**"Waterfall"**_. It was presented in New York 2008 and in Versailles 2016. Again, the natural elements as past of the installations is something that I feel passionate about.
+  
     [![OLAFUR ELIASSON : New York City Waterfalls](https://img.youtube.com/vi/JXszT4r64mE/0.jpg)](https://www.youtube.com/watch?v=JXszT4r64mE "OLAFUR ELIASSON : New York City Waterfalls3")
 
     [![Olafur Eliasson 'Waterfall' 2016 II](https://img.youtube.com/vi/SoIoVC4yHFk/0.jpg)](https://www.youtube.com/watch?v=SoIoVC4yHFk "Olafur Eliasson 'Waterfall' 2016 II")
@@ -120,6 +121,7 @@ The Ceiba tree (Kapok tree) is a magnificent species originated in pre-Hispanic 
 
     Some references for sound are: 
     _John Cage_ famous work of 1962 _**"4'33"**_ The following video is a performance of this piece and I really appreciate the way in which the limits between life and art, specially music in this work do not exist and for me it is an invitation to listen to the music that is around us.
+  
     [![John Cage's 4'33"](https://img.youtube.com/vi/JTEFKFiXSx4/0.jpg)](https://www.youtube.com/watch?v=JTEFKFiXSx4 "John Cage's 4'33")
     
 
@@ -128,7 +130,8 @@ The Ceiba tree (Kapok tree) is a magnificent species originated in pre-Hispanic 
     _Cage_ made a work called _**"Branches"**_ in 1976. It is an extension of his work "Child Of Tree" of 1975. It is a chance composition for amplified cactus, performed by the 7-piece daswirdas ensemble inside the echoic chambers of a huge Swiss dam. This is a video with the performance. I find very nice how the nature is also part of the composition. This is a video with a contemporary performance:
     [!["John Cage - Branches"](https://img.youtube.com/vi/YzyR4dwBp90/0.jpg)](https://www.youtube.com/watch?v=YzyR4dwBp90 "John Cage - Branches")
    
-    Similar to Cage's work, _Karlheinz Stockhausen_ made a work called _**" Herbstmusik"**_. This is a contemporary performance. It uses daily life elements as part of the composition: 
+    Similar to Cage's work, _Karlheinz Stockhausen_ made a work called _**" Herbstmusik"**_. This is a contemporary performance. It uses daily life elements as part of the composition:
+  
      [!["KARLHEINZ STOCKHAUSEN Herbstmusik"](https://img.youtube.com/vi/TuKqqmwygEc/0.jpg)](https://www.youtube.com/watch?v=TuKqqmwygEc "KARLHEINZ STOCKHAUSEN Herbstmusik")
 
      From this artist I emphasize his different explorations in order to question and go beyond the traditional ways of composing a playing music. I have read about his theories: the polyvalent form, the variable form,  subjective durational structures, the open form and the ways in which music can be dynamic when they are based on the different possibilities of the composition or the interpretation. I like this lively quality of the sound. 
@@ -165,7 +168,8 @@ The audiovisual design is based on the fact that the trees depend on the water f
 
         ![image alt](https://github.com/ctechfilmuniversity/project_ws2425_first_term/blob/489a021e4538fc3b338264407f4c56b6d03ae70f/Piraz%C3%A1nPalomar/img%20Final/12_CC1_Final.png)
 
-         & here is a video: 
+         & here is a video:
+      
         [![CC1_Final_Barnsley Fern](https://img.youtube.com/vi/vKJ8XwXGoZY/0.jpg)](https://www.youtube.com/watch?v=vKJ8XwXGoZY "CC1_Final_Barnsley Fern")
 
     2. **_CC1_Final_Phyllotaxis_**: is also based on the mathematical analysis of natural forms. Phyllotaxis is an spiral based arrangement of leaves on a plant stem. I followed a tutorial to do it too, as you will see on the "Learnings" section, but I personalized this code to adapt it to my project and make it interactive. I worked with the same sound system and sounds, but visually this approach is different from the previous one, because the proximity of the audience does not affect the "existence" (desintegration or blooming) of the pattern, but the saturation, brightness and hue of the pattern being drawn changes.
@@ -216,9 +220,11 @@ This is the second category of iterations. Ii is meant to provide me with a broa
     There are 2 forest belts: 
 
     * The tropical rainforest
+      
     ![alt text](https://earthobservatory.nasa.gov/img/biome/map-rainforest-manaus.png)
 
     - & the boreal coniferous forest:
+    
     ![alt text](https://earthobservatory.nasa.gov/img/biome/map-coniferous.jpg)
 
     Additionally we will find green trees around the world in the summer seasons as we know. However, in the tropics there are no seasons and the trees are growing non stop thanks to the constant presence of sun and rain. Therefore, flowers and fruits are constantly growing when the humans and their actions do not interfere with or affect the ecosystem. 50% of the types of plants are located in this ecosystem and 45% of the forest of the world are in this tropical landscapes. It is also in the tropics where we will find greater biodiversity and different types of plants, fungi and animals.
@@ -275,8 +281,9 @@ This is the second category of iterations. Ii is meant to provide me with a broa
 
     * It is refreshing that the books shares useful information about the unfortunately very human relationship with the nature that can be inspiring and/or trigger a painful guilt. But of course is nothing compared to the damage we do to our ecosystems. 
 
-    * I also learned about a very interesting project made by _Topher White_ with old cell phones to identify and stop the deforestation in real time: 
-    [![TEDx How We Can Protect Rainforests Around the World-Topher White (2014)](https://img.youtube.com/vi/wKgedT0ozME/0.jpg)](https://www.youtube.com/watch?v=wKgedT0ozME "TEDx How We Can Protect Rainforests Around the World-Topher White (2014)")
+    * I also learned about a very interesting project made by _Topher White_ with old cell phones to identify and stop the deforestation in real time:
+   
+       [![TEDx How We Can Protect Rainforests Around the World-Topher White (2014)](https://img.youtube.com/vi/wKgedT0ozME/0.jpg)](https://www.youtube.com/watch?v=wKgedT0ozME "TEDx How We Can Protect Rainforests Around the World-Topher White (2014)")
 
         Next, I want to share some part of the book that inspired me: 
         ![alt text](https://github.com/ctechfilmuniversity/project_ws2425_first_term/blob/b1945ea05eaf45141d60f4c4089e8f1400dfa1b9/Piraz%C3%A1nPalomar/img%20Final/14_.jpeg)
@@ -572,6 +579,7 @@ This is definitely a more technical approach. I will start by learning more abou
 * I took this chance and used this experiments to do the assignment for _**Technology Introductions**_ and I did a tutorial that it is available [here](https://miro.com/app/board/uXjVIcMXxjI=/?share_link_id=450052392297) where it is possible to see my partial results until now.  The final version of my p5 sketch is available [here](https://editor.p5js.org/dlpp/sketches/Xm-Me1geI). 
 
     The video with the results that is also available on my tutorial is here:
+  
 [![Tutorial: Sensors + Arduino + p5 = Interactive artistic tool!](https://img.youtube.com/vi/XZovjXTPFMI/0.jpg)](https://www.youtube.com/watch?v=XZovjXTPFMI "Tutorial: Sensors + Arduino + p5 = Interactive artistic tool!") 
 
 
@@ -622,7 +630,8 @@ This is definitely a more technical approach. I will start by learning more abou
 
 
 * I started to realize the importance of knowing the different kinds of sensors to decide how to build my project. There are A LOT! so I started with 4 videos made during the pandemic about sensors which help to avoid contact. The code used by the creator is run on the **Arduino software**. Those are: 
-    - Infrared obstacle avoidance sensor: It is an optical system, depends on the reflectivity of the color/object but **it does not work with black objects.** 
+    - Infrared obstacle avoidance sensor: It is an optical system, depends on the reflectivity of the color/object but **it does not work with black objects.**
+   
     [![Infrared Obstacle Avoidance Sensor Tutorial for Arduino / ESP32](https://img.youtube.com/vi/Y6sGoqSujlQ/0.jpg)](https://www.youtube.com/watch?v=Y6sGoqSujlQ "Infrared Obstacle Avoidance Sensor Tutorial for Arduino / ESP32")
 
     - The ultrasonic range sensor: I already know this one but I learned that a library is necessary in Arduino software to use this one called "svc/Ultrasonic.h". A low and a max distance can be decided, I found that very useful. 
@@ -636,7 +645,8 @@ This is definitely a more technical approach. I will start by learning more abou
          [![Arduino Capacitive Touch-Free Touch Sensor Tutorial](https://img.youtube.com/vi/AvMYqBj6CSg/0.jpg)](https://www.youtube.com/watch?v=AvMYqBj6CSg "Arduino Capacitive Touch-Free Touch Sensor Tutorial")
 
 * I continued learning about sensors and I found this video:
-      [![Sensors - which one to use](https://img.youtube.com/vi/DlG6LY84MUU/0.jpg)](https://www.youtube.com/watch?v=DlG6LY84MUU "Sensors - which one to use")
+
+     [![Sensors - which one to use](https://img.youtube.com/vi/DlG6LY84MUU/0.jpg)](https://www.youtube.com/watch?v=DlG6LY84MUU "Sensors - which one to use")
 
     - **PIR sensor:** Passive infrared sensor. Detects radiation changes. Movement. 
     - **Color sensor - TCS3200 chip**
@@ -663,7 +673,8 @@ This is definitely a more technical approach. I will start by learning more abou
     - **Option 2:** It has a button and 1 file. It uses a greeting card module. It does not work for me. 
     - **Option 3:** this option uses an sd card module, external amplifiers and it is possible to have multiple songs. **this is the option that can work for me**
 
-* I saw this video and learned about the 2 types of buzzers: active and passive. The first one can play only 1 tone, while the latter can play different tones. 
+* I saw this video and learned about the 2 types of buzzers: active and passive. The first one can play only 1 tone, while the latter can play different tones.
+   
     [![How to Use Buzzers (Active and Passive) with an Arduino (Lesson #20)](https://img.youtube.com/vi/gj-H_agfd6U/0.jpg)](https://www.youtube.com/watch?v=gj-H_agfd6U "How to Use Buzzers (Active and Passive) with an Arduino (Lesson #20)")
 
 
