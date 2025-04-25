@@ -22,7 +22,7 @@ Alex Walmsley - a.walmsley@filmuniversitaet.de
         * [Result Quality](#result-quality)
         * [Project Reflection](#project-reflection)
         * [Presentation](#presentation)
-    * [Presentation Schedule (*tba*)](#presentation-schedule-tba)
+    * [Presentation Schedule](#presentation-schedule)
 
 
 ## Advisors
@@ -39,7 +39,7 @@ Unless otherwise discussed with your advisor, you are meeting with your advisor 
 * Project presentation: 08.01.25, 13-18:00, room 6119
 * Project plan submission: 15.01.25, 23:59, Berlin time
 * Project submission: 15.03.24, 23:59, Berlin time
-* Final presentation: Beginning of April 2025
+* Final presentation: 12.05.25, 10-18:00 & 16.05.25, 13-18:00
 
 ## Working Period
 
@@ -150,10 +150,17 @@ The final project submission must include:
 
 ### Final Project Presentation
 
-In April, everybody must present their results and project documentation. The presentation must be <= 20 min. There mustn't be any major changes to what was submitted in March. After each presentation, there will be time for questions and a discussion.
+The presentation must include
 
+* 20 minutes presentation
+    * This is not just a presentation of the results, but make sure to include the various aspects that were asked for for the final project submission (see above)
+* 5 minutes demo (live or recorded)
 
-After the presentation, you must also submit the presentation slides and all used materials.   
+You are free to decide on the order of your presentation and demo.  
+  
+After each presentation, there will be time for questions and a discussion.
+
+You must also submit the presentation slides and all used materials.   
 
 ## Grading
 
@@ -205,6 +212,17 @@ The website and the oral presentation are graded mainly but not exclusively base
 
 
 
-## Presentation Schedule (*tba*)
+## Presentation Schedule
 
+As of now, the schedule is still subject to change.
 
+| Session       | Presenter | Note |
+| ------------- | --------- | ---- |
+| 12.05., 10:00 | Lisa      |      |
+| 12.05., 11:00 | Sophie    |      |
+| 12.05., 13:00 | Gorm      |      |
+| 12.05., 14:00 | Elena     |      |
+| 12.05., 15:00 | Philip    |      |
+| 16.05., 13:00 | Imogen    |      |
+| 16.05., 14:00 | Aydin     |      |
+| 16.05., 15:00 | David     |      |
