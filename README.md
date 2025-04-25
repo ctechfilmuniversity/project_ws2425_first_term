@@ -39,7 +39,7 @@ Unless otherwise discussed with your advisor, you are meeting with your advisor 
 * Project presentation: 08.01.25, 13-18:00, room 6119
 * Project plan submission: 15.01.25, 23:59, Berlin time
 * Project submission: 15.03.24, 23:59, Berlin time
-* Final presentation: 12.05.25, 10-18:00 & 16.05.25, 13-18:00
+* Final presentation: 12.05.25, 10-16:00 & 16.05.25, 13-18:00
 
 ## Working Period
 
