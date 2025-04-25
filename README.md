@@ -223,6 +223,6 @@ As of now, the schedule is still subject to change.
 | 12.05., 13:00 | Gorm      |      |
 | 12.05., 14:00 | Elena     |      |
 | 12.05., 15:00 | Philip    |      |
-| 16.05., 13:00 | Imogen    |      |
-| 16.05., 14:00 | Aydin     |      |
+| 16.05., 13:00 | Aydin     |      |
+| 16.05., 14:00 | Imogen    |      |
 | 16.05., 15:00 | David     |      |
