@@ -220,7 +220,7 @@ As of now, the schedule is still subject to change.
 | ------------- | --------- | ---- |
 | 12.05., 10:00 | Lisa      |      |
 | 12.05., 11:00 | Sophie    |      |
-| 12.05., 13:00 | Adi       |      |
+| 12.05., 12:00 | Adi       |      |
 | 12.05., 14:00 | Elena     |      |
 | 12.05., 15:00 | Philip    |      |
 | 16.05., 13:00 | Aydin     |      |
